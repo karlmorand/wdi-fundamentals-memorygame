@@ -60,3 +60,7 @@ footer {
 	background-color: #808080;
 	text-align: center;
 }
+.playingCard {
+	height: 190px;
+	width: 145px;
+}

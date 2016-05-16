@@ -17,7 +17,7 @@ var createBoard = function (){
 }
 }
 
-var isMatch = function (cards) {
+var isMatch = function (cards) {0
 	 if (cards[0] === cards[1]){
 		alert("You found a match!");
 	} else {
@@ -27,6 +27,11 @@ var isMatch = function (cards) {
 
 var isTwoCards = function(){
 	cardsInPlay.push(this.getAttribute('data-card'));
+	if (this.getAttribute('data-card') === 'king'){
+		this.innerHTML = '<img src="king.png" class="playingCard">';
+	} else {
+		this.innerHTML = '<img src="queen.png" class="playingCard">';
+	}
 	if (cardsInPlay.length === 2) {
 		isMatch(cardsInPlay);
 		cardsInPlay = [];
