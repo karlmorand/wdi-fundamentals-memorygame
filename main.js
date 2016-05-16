@@ -17,13 +17,14 @@ var createBoard = function (){
 }
 }
 
-var isMatch = function (cards) {0
+var isMatch = function (cards) {
 	 if (cards[0] === cards[1]){
 		alert("You found a match!");
 	} else {
 		alert("Sorry try again.");
 	}
-}
+	
+} 
 
 var isTwoCards = function(){
 	cardsInPlay.push(this.getAttribute('data-card'));
